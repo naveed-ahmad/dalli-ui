@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "~> 4.2"
   s.add_dependency "dalli", "~> 2.7"
-  s.add_dependency "hashie", "~> 3.4"
+  s.add_dependency "hashie", ">= 3.4.6"
   s.add_dependency "multi_json", "~> 1.11"
 
   s.add_development_dependency "redcarpet"
