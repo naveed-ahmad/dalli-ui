@@ -6,7 +6,7 @@ module Dalli
       layout "dalli/ui/application"
 
       def index
-        @stats = wrap_presenters Rails.cache.dalli.stats
+        @stats = wrap_presenters Rails.cache.dalli.with{|c|c.stats}
       end
 
       def flush
